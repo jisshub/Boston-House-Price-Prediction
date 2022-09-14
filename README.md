@@ -87,7 +87,27 @@ def predict():
     pass
 ```
 
-<!-- time: 1:44:00 -->
+```py
+data = request.json['data']
+```
+This means input we gave will be in json format which then will be captured inside data key.
+
+
+## Run app.py file on terminal
+
+```bash
+python app.py
+```
+
+## Testing the app in postman
+
+<!-- TIME: 1:57:00 -->
+
+https://www.youtube.com/watch?v=MJ1vWb1rGwM&t=862s
+
+
+
+
 
 
 
