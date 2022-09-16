@@ -105,6 +105,12 @@ python app.py
 
 https://www.youtube.com/watch?v=MJ1vWb1rGwM&t=862s
 
+https://bobbyhadz.com/blog/python-typeerror-object-of-type-ndarray-is-not-json-serializable
+
+
+
+
+
 
 
 
