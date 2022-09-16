@@ -101,12 +101,27 @@ python app.py
 
 ## Testing the app in postman
 
-<!-- TIME: 1:57:00 -->
+API: POST http://127.0.0.1:5000/predict_api
 
-https://www.youtube.com/watch?v=MJ1vWb1rGwM&t=862s
-
-https://bobbyhadz.com/blog/python-typeerror-object-of-type-ndarray-is-not-json-serializable
-
+```json
+{
+    "data": {
+        "CRIM": 0.00632,
+        "ZN": 18.0,
+        "INDUS": 2.31,
+        "CHAS": 0,
+        "NOX": 0.538,
+        "RM": 6.575,
+        "AGE": 65.2,
+        "DIS": 4.0900,
+        "RAD": 1.0,
+        "TAX": 296,
+        "PTRATIO": 15.3,
+        "B": 396.90,
+        "LSTAT": 5
+    }
+}
+```
 
 
 
