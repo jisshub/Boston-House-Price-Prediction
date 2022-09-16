@@ -123,6 +123,9 @@ API: POST http://127.0.0.1:5000/predict_api
 }
 ```
 
+## Prediction from Front End Application
+
+<!-- time: 2:01:30 -->
 
 
 
