@@ -25,6 +25,20 @@ def predict_api():
     print(output[0][0])
     return jsonify(output[0][0])
 
+@app.route('/predict', methods=['POST'])
+def predict():
+    # capture the form values & convert to float values.
+    data=[float(x) for x in request.form.values()]
+    # scale and transform the data.
+    final_input = scaling_model.transform(np.array(data).reshape(1,-1))
+    # predict the output using the inputs which will be a 2D array. we take out the first dimension which gave us the output.
+    output = regression_model.predict(final_input)[0][0]
+    print(output)
+    # render the predicted value in html page.
+    return render_template('home.html', prediction_text=f"The house price prediction is {output}")
+    
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 

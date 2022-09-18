@@ -1,5 +1,7 @@
 # Boston-House-Price-Prediction
 
+Video Link: https://www.youtube.com/watch?v=MJ1vWb1rGwM&list=PLT6wrBlkasCNqKnKcs1hOoCEhtcUZiAqo&index=100
+
 ## Create New Repository
 
 - Clone the repository into our machine.
@@ -125,7 +127,20 @@ API: POST http://127.0.0.1:5000/predict_api
 
 ## Prediction from Front End Application
 
-<!-- time: 2:01:30 -->
+1. Create a function in *app.py* file to get the user inputs.
+
+- Once we click the **predict** button, it hits the **predict** url in app.py file. 
+
+- We take all the values from the form.
+
+- Convert them to an array with another shape.
+
+- Finally predicting it to get the output.
+
+- Display the output in an html file.
+
+
+
 
 
 
