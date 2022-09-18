@@ -156,6 +156,31 @@ def predict():
 
 ```
 
+## Procfile for Heroku Deployment
+
+- Create a *Procfile* before deploying the app to heroku.
+- A *Procfile* specify some commands that needs to be executed by the app as soon as it starts.
+
+
+```Procfile
+web: gunicorn app:app
+```
+
+- **gunicorn** is a python http server for wsgi application.
+- Also udpate the *requirements.txt* file with gunicorn.
+
+
+```txt
+Flask
+sklearn
+pandas
+numpy
+matplotlib
+gunicorn
+```
+
+
+
 
 
 
