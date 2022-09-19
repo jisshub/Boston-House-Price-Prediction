@@ -181,9 +181,8 @@ gunicorn
 
 ## Deploying The App To Heroku
 
-https://www.youtube.com/watch?v=MJ1vWb1rGwM&t=7269s
-<!-- time: 2:16:30 -->
-
+- Heroku account
+- Create new app.
 
 
 
