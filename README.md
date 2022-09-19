@@ -183,6 +183,11 @@ gunicorn
 
 - Heroku account
 - Create new app.
+- Choose github cli
+- Search for github repository.
+- Click on connect.
+- Enable Automatic deploys option.
+- Click on Deploy Branch button.
 
 
 
