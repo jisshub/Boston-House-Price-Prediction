@@ -189,7 +189,7 @@ gunicorn
 - Enable Automatic deploys option.
 - Click on Deploy Branch button.
 
-## Deploying the app to Dockers
+## Deploying the App to Dockers
 
 ### 1. Create a docker file in root folder. 
 
@@ -286,6 +286,14 @@ gunicorn
 
 
 We set up the Github Actions now, so as soon as workflows folder is seen, all the  files will be deployed.
+
+![](./images/image2.png)
+
+We can see that app is deployed in a container. check right side of the above image.
+
+### Check Github Actions:
+
+https://github.com/jisshub/Boston-House-Price-Prediction/actions
 
 
 
