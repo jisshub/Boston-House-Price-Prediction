@@ -254,7 +254,40 @@ gunicorn
 
 #### 6. CMD Command
 
-    <!-- time: 2:31:00 -->
+    1. Run the web application using some commands. 
+    
+    ```Dockerfile
+    CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
+    ```
+    > gunicorn is required when we deploy the app into heroku cloud.
+    > Here we bind the port number with our local address.
+
+
+### 3. Configure Github Actions
+
+    > When we want to create github actions using CI/CD pipeline, we create 2 folders,
+        1) .github 
+        2) workflows
+
+    > We create the above because as soon as we push our code to repository, main.yaml file will have the entire process to do.
+        1. Build a docker file.
+        2. Push the docker image in the form of a container to the heroku platform.
+    
+    > So the entire configuration will be set up in the main.yaml file.
+    
+    > We have to make this a CI/CD pipeline as soon as we push the same to repository. For that, we have add some secret keys in github settings.
+
+        1) Settings > Action Secrets > New Secret
+            Set Name and Secret.
+
+    > Create 3 such action secret keys.
+
+![](./images/image1.png)
+
+
+We set up the Github Actions now, so as soon as workflows folder is seen, all the  files will be deployed.
+
+
 
 
 
